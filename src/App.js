@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { TbLoader } from "react-icons/tb";
 import './index.css';
 
 const App = () => {
@@ -43,7 +44,7 @@ const App = () => {
   };
 
   const showLoading = () =>
-    loading ? <h2 className="text-center">Loading...</h2> : "";
+    loading ? <h2 className="text-2xl flex justify-center items-center"><TbLoader className="mr-1"/>Loading...</h2> : "";
 
   const searchForm = () => (
     <form
